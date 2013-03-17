@@ -10,6 +10,15 @@ link "/usr/bin/redis-cli" do
   to "/usr/local/bin/redis-cli"
 end
 
+# symlink /home/git (needed for gitlab or gitlab-shell hard codeing)
+link "/home/git" do 
+  to "/home/vagrant"
+end
+link "/home/git/gitlab-shell" do
+  to "/vagrant/gitlab-shell"
+end
+
+
 # Install required packages for Gitlab
 node['gitlab']['packages'].each do |pkg|
   package pkg
