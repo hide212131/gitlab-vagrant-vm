@@ -7,7 +7,7 @@ default['gitlab']['repos_path'] = "/home/vagrant/repositories"
 default['gitlab']['app_shell_home'] = "/vagrant/gitlab-shell"
 
 # Set github URL for gitlab
-default['gitlab']['gitlab_url'] = "git://github.com/gitlabhq/gitlabhq.git"
+default['gitlab']['gitlab_url'] = "https://github.com/hide212131/gitlabhq.git"
 default['gitlab']['gitlab_branch'] = "master"
 
 default['gitlab']['packages'] = %w{
